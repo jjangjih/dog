@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, p, ul {margin: 0; padding: 0;}
+ul li { list-style: none; }
+a { text-decoration: none;}
+hr { display: none;}
+.hidden { position: absolute; left: -9999px;}
+/* 웹폰트 */
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;}
+
+body { width: 800px; margin: 8px auto 0; font-family: 'Noto Sans KR', sans-serif; }
+h2 { font-family: 'KOTRAHOPE'; }
+/* 헤더 */
+#header { display: flex; flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; height: 150px; background: #f46075; }
+#header h1 { width:185px; }
+#header h1 a { display:block; width:185px; height: 150px; background: url(../images/logo.png) no-repeat;
+                text-indent: -9999px; } /* 185x150 */
+/* gnb */
+/* #gnb { position: absolute; bottom: 45px; left: 292px; }
+#gnb ul { }
+#gnb ul li { float: left; margin-right: 20px; }
+#gnb ul li a { color: #fff; } */
+#gnb { }
+#gnb ul { display: flex; margin-right: 107px; }
+#gnb ul li { margin-left: 30px; }
+#gnb ul li a { color: #fff; }
+/* 본문 */
+main { width: 564px; float: left;}
+/* content */
+#content h2 { padding-left: 6px; line-height: 82px; }
+#content article { width: 272px; height: 242px;
+                    float: left; margin: 0 0 10px 10px; 
+                    padding: 25px 10px 0px;
+                    border: 1px solid #ccc; box-sizing: border-box; 
+                    transition: 1s;}
+#content article.dogHouse:hover {  background : #360174; border: 1px solid #f46075; }
+#content article.dogHouse:hover a {  color: #fff; }
+#content article.dogFood:hover { background : #fab5e5; border: 1px solid #94ffdf; }
+#content article.dogWater:hover { background : #9bcff1; border: 1px solid #e1ff59; }
+#content article.dogName:hover { background : #b3b3b3; border: 1px solid #b327a7; }
+#content article a { color: #333;}
+#content article a h3 { margin-bottom:5px; font-size: 16px; }
+#content article a p { font-size: 14px; line-height: 18px; }
+/* aside */
+#puppyPhoto { width: 202px; float: right; margin-top: 82px;
+            padding: 10px 0;
+            border: 1px solid #006400; background: #ffffcc;
+            box-sizing: border-box;
+            text-align: center;
+            }
+/* footer */
+#footer { clear: both; padding: 20px 0; background: #333333;
+            color: #fff; text-align: center;}
